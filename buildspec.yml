@@ -5,14 +5,12 @@ phases:
         runtime-versions:
             python: 3.9
         commands:
-            - echo "installing something"
+            - printenv
     pre_build:
         commands: 
             - echo "we are in the pre build phase"
     build:
         commands:
-            - echo "we are in the build block"
-            - echo "we will run some tests"
             - grep -Fq "Congratulations" index.html
     post_build:
         commands:
