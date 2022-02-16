@@ -3,7 +3,7 @@ version: 0.2
 phases: 
     install:
         runtime-versions:
-            pyhton: 3.7
+            python: 3.7
         commands:
             - echo "installing something"
     pre_build:
